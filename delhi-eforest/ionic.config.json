@@ -1,0 +1,7 @@
+{
+  "name": "Delhi Eforest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

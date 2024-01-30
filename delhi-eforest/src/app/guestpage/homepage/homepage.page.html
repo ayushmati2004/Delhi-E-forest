@@ -1,0 +1,259 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="plant">
+    <ion-button slot="start" fill="outline" color="plant">
+      <ion-avatar>
+        <img src="assets/img/guestlogo.png"  alt="" />
+      </ion-avatar>
+    </ion-button>
+    <ion-title mode="md" class="ion-no-padding">
+      <ion-label>
+         <ion-text color="dark">Guest</ion-text>
+      </ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="container">
+  <swiper-container #swiperEx
+  [initial-slide]="1"
+  [keyboard]="true"
+  [slidesPerView]="1.2"
+  [centeredSlides]="true"
+  [autoplay]="true"
+  [spaceBetween]="20"
+  [loop]="true"
+  effect="fade"
+  [zoom]="true"
+  [pagination]="{clickable:true , dynamicBullets: true}">
+  <swiper-slide *ngFor="let img of swiper_images">
+    <div style="background-image: url({{img}}); background-size: cover; background-color: rgb(216, 130, 18);width: 70%; height: 80%;">
+    </div>
+  </swiper-slide>
+  </swiper-container>
+  <div class="topic">
+    What would you like to do today?
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2.6">
+        <a href="https://dpta.eforest.delhi.gov.in/index.aspx">
+        <ion-card>
+          <ion-thumbnail>
+            <img src="../../../../assets/img/afforestation.png" alt=""/>
+          </ion-thumbnail>
+          <ion-label class="ion-text-wrap ion-text-center"></ion-label>
+        </ion-card>
+      </a>
+      </ion-col>
+
+    <ion-col size="2.6">
+      <a href="https://evanlekh.eforest.delhi.gov.in/">
+      <ion-card>
+        <ion-thumbnail>
+          <img src="../../../../assets/img/E-van.png" alt=""/>
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap ion-text-center">E-Van Lekh</ion-label>
+      </ion-card>
+    </a>
+    </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://abwls.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/sanctuary.png" alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Asola Bhati</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://gap.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/greenaction.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Green Action</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://grievance.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/grievance.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Grievance</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://dillifreetree.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/freetree.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Dilli Free Tree</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://internship.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/internship.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Apply for Internship</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/cityforest.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">City Forest</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/reserveforest.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Reserved Forest</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/legal.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Legal</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/RTI.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">RTI</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/recruitment.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Recruitment</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/research.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Research</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://wildliferescue.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/wildliferescue.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Wildlife Rescue</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://rmb.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/rmb.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">RMB</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://campa.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/campa.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">CAMPA</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://ghl.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/helpline.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Helpline</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/epublish.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">E-Publish</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://training.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/training.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Training</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+
+  <ion-col size="2.6">
+    <a href="https://noticeboard.eforest.delhi.gov.in/">
+    <ion-card>
+      <ion-thumbnail>
+        <img src="../../../../assets/img/noticeboard.png"  alt=""/>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap ion-text-center">Notice Board</ion-label>
+    </ion-card>
+  </a>
+  </ion-col>
+</ion-row>
+  </ion-grid>
+</ion-content>

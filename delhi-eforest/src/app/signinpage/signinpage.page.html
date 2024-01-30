@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+  <div id="bg">
+      <ion-fab vertical="bottom" edge horizontal="center" slot="fixed">
+          <ion-fab-button color="dark" routerLink="/home" >
+            <ion-icon name="close-outline" color="medium"></ion-icon>
+          </ion-fab-button>
+      </ion-fab>
+  </div>
+  <ion-list lines="none" class="ion-margin">
+      <ion-list-header color="medium">WELCOME !</ion-list-header>
+      <ion-item class="ion-margin">
+        <ion-input placeholder="Username" type="text" clearInput="true" color="light"><ion-icon name="person-outline" slot="end"></ion-icon></ion-input>
+      </ion-item>
+      <ion-item class="ion-margin">
+        <ion-input placeholder=" Email id" type="text" clearInput="true"><ion-icon name="person-outline" slot="end"></ion-icon></ion-input>
+     </ion-item>
+      <ion-item class="ion-margin">
+        <ion-input placeholder="Password" type="Password" clearInput="true"><ion-icon name="lock-closed-outline" slot="end"></ion-icon></ion-input>
+     </ion-item>
+    <div align="right">
+      <ion-button shape="round" strong="true" class="ion-margin-end" fill="outline" color="plant" [routerLink]="['/home']">
+        Sign Up
+        <ion-icon name="log-in" slot="end" ></ion-icon>
+      </ion-button>
+    </div>  
+  </ion-list>
+</ion-content>
